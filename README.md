@@ -18,9 +18,12 @@ Coin Specifications
 - `premine : first 300 blocks`
 - `Forked from TurtleCoin 0.6.4`
 
-The coin is currently in a startup phase. Initial support will be through discord.
-Network will go live shortly.
+The coin is currently in a startup phase. 
 
+Initial support will be through discord.
+https://discord.gg/E9GwCE6
+
+Network will go live shortly.
 
 Solo mining is recommended until pool operators catch on.
 
