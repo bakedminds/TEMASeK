@@ -26,7 +26,7 @@ The coin is currently in a startup phase.
 Initial support will be through discord.
 https://discord.gg/E9GwCE6
 
-Network will go live shortly.
+Network has gone live!
 
 Solo mining is recommended until pool operators catch on.
 
