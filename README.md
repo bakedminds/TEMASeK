@@ -10,7 +10,7 @@ Coin Specifications
 - `algorithm : CryptoNightLite V1`
 - `coin Type : POW`
 - `max. supply : 150,000,000 (150 Million)`
-- `tail Emmissions: 50 block reward (3.5% of total supply per year)`
+- `tail emissions: 50 block reward (3.5% of total supply per year)`
 - `difficulty target : 300 (5 minutes)`
 - `mined block confirmation : 12 blocks (~1 hour)`
 - `current mixin : 3 fixed`
@@ -18,7 +18,7 @@ Coin Specifications
 - `RPC port : 16878`
 - `genesis : July 27, 2018`
 - `genesis block reward : 0 (ZERO)`
-- `premine : first 300 blocks`
+- `premine : first 200 blocks`
 - `Forked from TurtleCoin 0.6.4`
 
 The coin is currently in a startup phase. 
