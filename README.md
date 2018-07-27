@@ -2,21 +2,21 @@ TEMASek - Proudly brought to you by The TEMASeK CryptoCoin Developers
 
 Coin Specifications
 
-coin name : TEMASeK
-ticker : TSK
-algorithm : CryptoNightLite V1
-coin Type : POW
-max. supply : 150,000,000 (150 Million)
-tail Emmissions: 50 Block rewards (3.5% of total supply per year)
-difficulty target : 300 (5 minutes)
-mined block confirmation : 12 blocks (~1 hour)
-current mixin : 3 fixed
-P2P port : 16877
-RPC port : 16878
-genesis : July 27, 2018
-genesis block reward : 0 (ZERO)
-premine : first 300 blocks
-Forked from TurtleCoin 0.6.4
+- `coin name : TEMASeK`
+- `ticker : TSK`
+- `algorithm : CryptoNightLite V1`
+- `coin Type : POW`
+- `max. supply : 150,000,000 (150 Million)`
+- `tail Emmissions: 50 block reward (3.5% of total supply per year)`
+- `difficulty target : 300 (5 minutes)`
+- `mined block confirmation : 12 blocks (~1 hour)`
+- `current mixin : 3 fixed`
+- `P2P port : 16877`
+- `RPC port : 16878`
+- `genesis : July 27, 2018`
+- `genesis block reward : 0 (ZERO)`
+- `premine : first 300 blocks`
+- `Forked from TurtleCoin 0.6.4`
 
 The coin is currently in a startup phase. Initial support will be through discord.
 Network will go live shortly.
