@@ -1,5 +1,7 @@
 TEMASek - Proudly brought to you by The TEMASeK CryptoCoin Developers
 
+Forked from TurtleCoin 0.6.4
+
 
 ### How To Compile
 
