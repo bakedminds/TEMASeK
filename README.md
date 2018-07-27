@@ -21,6 +21,21 @@ Coin Specifications
 The coin is currently in a startup phase. Initial support will be through discord.
 Network will go live shortly.
 
+
+Solo mining is recommended until pool operators catch on.
+
+Compile from source as binaries will not be available at this early stage.
+
+Run the daemon: 
+
+./TEMASeK --log-level 2
+
+Run the solo miner:
+
+./miner --address <your address> --log-level 3
+
+
+
 ### How To Compile
 
 On Linux or Mac on a non standard architecture, and can't get GNU Readline installed?
