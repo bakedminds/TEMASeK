@@ -1,5 +1,8 @@
 TEMASek - Proudly brought to you by The TEMASeK CryptoCoin Developers
 
+Background on the name of the Coin:
+https://en.wikipedia.org/wiki/Temasek
+
 Coin Specifications
 
 - `coin name : TEMASeK`
