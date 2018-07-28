@@ -1,3 +1,5 @@
+![image] (https://user-images.githubusercontent.com/41658824/43353282-e51cdc0c-9266-11e8-87ee-a95463993e4e.jpg)
+
 TEMASek - Proudly brought to you by The TEMASeK CryptoCoin Developers
 
 Background on the name of the Coin:
