@@ -1290,11 +1290,11 @@ bool pool_wallet::show_blockchain_height(const std::vector<std::string>& args) {
 bool pool_wallet::confirmTransaction(TransferCommand cmd, bool multiAddress) {
   std::string feeString;
 
-  /* 10 shells = 0.1 TRTL */
-  if (cmd.fee == 10) {
-    feeString = "0.1 TRTL (minimum)";
+  /* 1 seks = 0.00000001 TSK */
+  if (cmd.fee == 500) {
+    feeString = "500 seks (minimum)";
   } else {
-    feeString = m_currency.formatAmount(cmd.fee) + " TRTL";
+    feeString = m_currency.formatAmount(cmd.fee) + " TSK";
   }
 
   std::string walletName = boost::filesystem::change_extension(m_wallet_file, "").string();
@@ -1303,7 +1303,7 @@ bool pool_wallet::confirmTransaction(TransferCommand cmd, bool multiAddress) {
 
   if (!multiAddress) {
     std::cout << "You are sending " << m_currency.formatAmount(cmd.dsts[0].amount)
-              << " TRTL, with a fee of " << feeString << std::endl
+              << " TSK, with a fee of " << feeString << std::endl
               << "FROM: " << walletName << std::endl
               << "TO: " << std::endl << cmd.dsts[0].address << std::endl
               << std::endl;
@@ -1315,7 +1315,7 @@ bool pool_wallet::confirmTransaction(TransferCommand cmd, bool multiAddress) {
 
     for (auto destination : cmd.dsts) {
       std::cout << "You are sending " << m_currency.formatAmount(destination.amount)
-                << " TRTL" << std::endl << "FROM: " << walletName << std::endl
+                << " TSK" << std::endl << "FROM: " << walletName << std::endl
                 << "TO: " << std::endl << destination.address << std::endl
                 << std::endl;
     }
@@ -1508,13 +1508,13 @@ bool pool_wallet::print_outputs_from_transaction(const std::vector<std::string>&
     {
       uint64_t amount = ourTransaction.outputs[i].output.amount; 
 
-      std::string trtl = m_currency.formatAmount(amount);
+      std::string tsk = m_currency.formatAmount(amount);
 
       sum += amount;
 
       found = true;
 
-      logger(INFO, GREEN) << "The transaction output of " << trtl << " TRTL belongs to you!";
+      logger(INFO, GREEN) << "The transaction output of " << tsk << " TRTL belongs to you!";
     }
   }
 
@@ -1524,9 +1524,9 @@ bool pool_wallet::print_outputs_from_transaction(const std::vector<std::string>&
   }
   else
   {
-    std::string trtl = m_currency.formatAmount(sum);
+    std::string tsk = m_currency.formatAmount(sum);
 
-    logger(INFO, GREEN) << "Outputs totalling " << trtl << " TRTL were sent to your wallet!";
+    logger(INFO, GREEN) << "Outputs totalling " << tsk << " TSK were sent to your wallet!";
   }
 
   return true;
@@ -1617,13 +1617,13 @@ int main(int argc, char* argv[]) {
 
   logManager.configure(buildLoggerConfiguration(logLevel, Common::ReplaceExtenstion(argv[0], ".log")));
 
-  std::cout << "TurtleCoin v" << PROJECT_VERSION << " Poolwallet" << std::endl;
+  std::cout << "TEMASeK v" << PROJECT_VERSION << " Poolwallet" << std::endl;
 
   std::cout << "Please note that usage of simplewallet/poolwallet has been "
             << "deprecated for pool usage." << std::endl
-            << "If you are using turtle-pool, you can trivially transfer to "
+            << "If you are using TEMASeK-pool, you can trivially transfer to "
             << "walletd by following these instructions:" << std::endl
-            << "https://github.com/turtlecoin/turtle-pool/pull/5" << std::endl;
+            << "https://github.com/TEMASeK-CryptoCoin/temasek-pool/pull/5" << std::endl;
 
   CryptoNote::Currency currency = CryptoNote::CurrencyBuilder(logManager).
     testnet(command_line::get_arg(vm, arg_testnet)).currency();
