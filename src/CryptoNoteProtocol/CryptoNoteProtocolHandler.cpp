@@ -589,7 +589,7 @@ bool CryptoNoteProtocolHandler::on_connection_synchronized() {
       logger(INFO, WHITE) << " Always exit TEMASeK and zedwallet with the \"exit\" command to preserve your chain and wallet data." << ENDL ;
       logger(INFO, WHITE) << " Use the \"help\" command to see a list of available commands." << ENDL ;
       logger(INFO, WHITE) << " Use the \"export_keys\" command in zedwallet to display your keys for restoring a corrupted wallet." << ENDL ;
-      logger(INFO, WHITE) << " If you need more assistance, visit the #HELP channel in the TEMASeK Discord Chat - http://PlaceHolder" << ENDL ;
+      logger(INFO, WHITE) << " If you need more assistance, visit the #HELP channel in the TEMASeK Discord Chat - https://discord.gg/E9GwCE6 " << ENDL ;
       logger(INFO, BRIGHT_MAGENTA) << "===================================================" << ENDL << ENDL ;
 
       logger(INFO, BRIGHT_GREEN) <<
