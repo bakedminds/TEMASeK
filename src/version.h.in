@@ -2,7 +2,7 @@
 #define STR(x) STR_HELPER(x)
 
 #define PROJECT_NAME "TEMASeK CryptoCoin"
-#define PROJECT_SITE "https://github.com/TEMASeK-CryptoCoin/TEMASeK"
+#define PROJECT_SITE "https://github.com/TEMASeK-CryptoCoin"
 #define PROJECT_COPYRIGHT "Copyright 2018, The TEMASeK CryptoCoin Developers"
 #define APP_VER_MAJOR 0
 #define APP_VER_MINOR 0
