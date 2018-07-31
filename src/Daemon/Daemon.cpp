@@ -2,7 +2,7 @@
 // Copyright (c) 2018, The TurtleCoin Developers
 // Copyright (c) 2018, The Karai Developers
 // Copyright (c) 2018, The TEMASeK CryptoCoin Developers
-// 
+//
 // Please see the included LICENSE file for more information.
 
 #include <fstream>
@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
     command_line::add_arg(desc_cmd_sett, arg_load_checkpoints);
     command_line::add_arg(desc_cmd_sett, arg_set_fee_address);
     command_line::add_arg(desc_cmd_sett, arg_set_fee_amount);
-    
+
     RpcServerConfig::initOptions(desc_cmd_sett);
     NetNodeConfig::initOptions(desc_cmd_sett);
     DataBaseConfig::initOptions(desc_cmd_sett);
@@ -231,13 +231,15 @@ int main(int argc, char* argv[])
     logManager.configure(buildLoggerConfiguration(cfgLogLevel, cfgLogFile));
 
     logger(INFO, BRIGHT_GREEN) <<
-
-      #ifdef _WIN32
-      "\n WELCOME TO TEMASeK\n" << ENDL;
-      #else
-      "\n                                                                            \n"          "WELCOME TO TEMASeK\n" << ENDL;
-      #endif
-
+"\n \n"
+  "  #####   ######  #    #    #      ####           #   # \n"
+  "    #     #       ##  ##    #     #    #          #  #  \n"
+  "    #     #       # ## #   ###    #        ####   # #   \n"
+  "    #     ####    #    #   # #     ####   #    #  ##    \n"
+  "    #     #       #    #  #####        #  ######  # #   \n"
+  "    #     #       #    #  #   #   #    #  #       #  #  \n"
+  "    #     ######  #    # ##   ##   ####    ####   #   # \n"
+  << ENDL;
     logger(INFO, BRIGHT_GREEN) << "Welcome to " << CryptoNote::CRYPTONOTE_NAME << " v" << PROJECT_VERSION_LONG;
 
     if (command_line_preprocessor(vm, logger)) {
